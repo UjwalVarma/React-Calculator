@@ -6,19 +6,22 @@
 }
 
 .keypad p {
-  line-height: 1.875rem;
+  line-height: 3rem; 
   font-size: 1.8rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 200ms;
+  transition: background-color 0.2s, box-shadow 0.2s;
   user-select: none;
   cursor: pointer;
   color: var(--text-color-2);
+  border-radius: 50px; 
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.1); 
 }
 
-.keypad_keys p:active {
-  background-color: rgba(0, 0, 0, 0.14);
+.keypad p:active {
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: none; 
 }
 
 .keypad_keys {
@@ -28,8 +31,8 @@
 }
 
 .keypad_keys p {
-  width: 33%;
-  height: 25%;
+  width: 33.3333%; 
+  height: 25%; 
 }
 
 .keypad_symbols {
